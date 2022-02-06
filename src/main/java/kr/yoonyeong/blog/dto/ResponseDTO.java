@@ -1,0 +1,21 @@
+package kr.yoonyeong.blog.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
+
+/**
+ * @author rival
+ * @since 2022-02-06
+ */
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+public class ResponseDTO<T> {
+  private String error;
+  private List<T> data;
+}
